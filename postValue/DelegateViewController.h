@@ -8,6 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
+@protocol WLDelegate <NSObject>
+
+-(void)postValue: (NSString *)postValue;
+
+-(NSString *)postValueWithStr: (NSString *)postValue;
+
+@end
 @interface DelegateViewController : UIViewController
+@property(nonatomic,weak) id <WLDelegate> delegate;
 
 @end

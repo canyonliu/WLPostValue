@@ -9,7 +9,12 @@
 #import "BlockViewController.h"
 
 @interface BlockViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *blockText;
+@property (weak, nonatomic) IBOutlet UIButton *blockBtn;
 
+- (IBAction)blockBtnClick:(id)sender;
+@property(nonatomic ,copy)WLBlock block;
+@property(nonatomic ,copy)WNBlock wnblock;
 @end
 
 @implementation BlockViewController
@@ -18,6 +23,15 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }
+
+-(void)selReturnBlock:(WLBlock) wlBlock{
+    self.block = wlBlock;
+}
+
+-(void)selReturnWnBlock:(WNBlock) wnBlock{
+    self.wnblock = wnBlock;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
@@ -34,4 +48,14 @@
 }
 */
 
+- (IBAction)blockBtnClick:(id)sender {
+    self.block(self.blockText.text);
+    
+    NSString *str =  self.wnblock(self.blockText.text);
+    NSLog(@"wnblock == %@",str);
+    
+//    self.block = ^(NSString *str){
+//        
+//    };
+}
 @end

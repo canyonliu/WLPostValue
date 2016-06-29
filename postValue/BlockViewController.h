@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-
+typedef void (^WLBlock) (NSString *postValue);
+typedef NSString * (^WNBlock) (NSString *postValue);
 @interface BlockViewController : UIViewController
-
+-(void)selReturnBlock:(WLBlock) wlBlock;
+-(void)selReturnWnBlock:(WNBlock) wnBlock;
 @end

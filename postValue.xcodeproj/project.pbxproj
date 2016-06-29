@@ -14,6 +14,10 @@
 		76591D811CF6D56B009192E0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76591D801CF6D56B009192E0 /* Assets.xcassets */; };
 		76591D841CF6D56B009192E0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76591D821CF6D56B009192E0 /* LaunchScreen.storyboard */; };
 		76591D8F1CF6D56C009192E0 /* postValueTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 76591D8E1CF6D56C009192E0 /* postValueTests.m */; };
+		76591D9C1CF6D8BD009192E0 /* BlockViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76591D9A1CF6D8BD009192E0 /* BlockViewController.m */; };
+		76591D9D1CF6D8BD009192E0 /* BlockViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76591D9B1CF6D8BD009192E0 /* BlockViewController.xib */; };
+		76591DA11CF6D8D1009192E0 /* DelegateViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 76591D9F1CF6D8D1009192E0 /* DelegateViewController.m */; };
+		76591DA21CF6D8D1009192E0 /* DelegateViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 76591DA01CF6D8D1009192E0 /* DelegateViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,12 @@
 		76591D8A1CF6D56C009192E0 /* postValueTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = postValueTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		76591D8E1CF6D56C009192E0 /* postValueTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = postValueTests.m; sourceTree = "<group>"; };
 		76591D901CF6D56C009192E0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		76591D991CF6D8BD009192E0 /* BlockViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BlockViewController.h; sourceTree = "<group>"; };
+		76591D9A1CF6D8BD009192E0 /* BlockViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BlockViewController.m; sourceTree = "<group>"; };
+		76591D9B1CF6D8BD009192E0 /* BlockViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BlockViewController.xib; sourceTree = "<group>"; };
+		76591D9E1CF6D8D1009192E0 /* DelegateViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DelegateViewController.h; sourceTree = "<group>"; };
+		76591D9F1CF6D8D1009192E0 /* DelegateViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DelegateViewController.m; sourceTree = "<group>"; };
+		76591DA01CF6D8D1009192E0 /* DelegateViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DelegateViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +100,12 @@
 				76591D821CF6D56B009192E0 /* LaunchScreen.storyboard */,
 				76591D851CF6D56B009192E0 /* Info.plist */,
 				76591D741CF6D56B009192E0 /* Supporting Files */,
+				76591D991CF6D8BD009192E0 /* BlockViewController.h */,
+				76591D9A1CF6D8BD009192E0 /* BlockViewController.m */,
+				76591D9B1CF6D8BD009192E0 /* BlockViewController.xib */,
+				76591D9E1CF6D8D1009192E0 /* DelegateViewController.h */,
+				76591D9F1CF6D8D1009192E0 /* DelegateViewController.m */,
+				76591DA01CF6D8D1009192E0 /* DelegateViewController.xib */,
 			);
 			path = postValue;
 			sourceTree = "<group>";
@@ -193,7 +209,9 @@
 			files = (
 				76591D841CF6D56B009192E0 /* LaunchScreen.storyboard in Resources */,
 				76591D811CF6D56B009192E0 /* Assets.xcassets in Resources */,
+				76591D9D1CF6D8BD009192E0 /* BlockViewController.xib in Resources */,
 				76591D7F1CF6D56B009192E0 /* Main.storyboard in Resources */,
+				76591DA21CF6D8D1009192E0 /* DelegateViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,6 +231,8 @@
 			files = (
 				76591D7C1CF6D56B009192E0 /* ViewController.m in Sources */,
 				76591D791CF6D56B009192E0 /* AppDelegate.m in Sources */,
+				76591DA11CF6D8D1009192E0 /* DelegateViewController.m in Sources */,
+				76591D9C1CF6D8BD009192E0 /* BlockViewController.m in Sources */,
 				76591D761CF6D56B009192E0 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

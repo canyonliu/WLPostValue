@@ -9,14 +9,16 @@
 #import "DelegateViewController.h"
 
 @interface DelegateViewController ()
+@property (weak, nonatomic) IBOutlet UITextField *delegateText;
 
+- (IBAction)delegateBtn:(id)sender;
 @end
 
 @implementation DelegateViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,4 +36,23 @@
 }
 */
 
+//
+//-(void)postValue: (NSString *)postValue{
+////    if([_delegate respondsToSelector:@selector(postValue:)]){
+////        self.delegateText.text = postValue;
+////    }
+//
+//}
+
+- (IBAction)delegateBtn:(id)sender {
+    if([_delegate respondsToSelector:@selector(postValue:)]){
+        //self.delegateText.text = @"123";
+        [self.delegate postValue:self.delegateText.text];
+    }
+    
+    if([self.delegate respondsToSelector:@selector(postValueWithStr:)]){
+        NSString *str = [self.delegate postValueWithStr:self.delegateText.text];
+        NSLog(@"===%@",str);
+    }
+}
 @end
