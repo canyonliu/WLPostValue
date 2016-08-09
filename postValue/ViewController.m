@@ -27,6 +27,9 @@
 //    _myTableView.backgroundColor = [UIColor redColor];
     [self.view addSubview:_myTableView];
     
+    
+    //测试自动集成工具
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -48,7 +51,7 @@
         cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     }
     if(indexPath.row == 0){
-    cell.textLabel.text = @"通过block传值";
+    cell.textLabel.text = @"通过block来进行传值";
     }
     else if(indexPath.row == 1){
         cell.textLabel.text = @"通过delegate传值";
